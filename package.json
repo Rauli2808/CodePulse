@@ -2,6 +2,7 @@
   "name": "codepulse",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rauli2808.github.io/CodePulse",
   "engines": {
     "node": ">=20.19.0"
   },
@@ -11,9 +12,12 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint . --ignore-pattern dist"
+    "lint": "eslint . --ignore-pattern dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "19.2.6",
     "react-dom": "19.2.6"
   },
